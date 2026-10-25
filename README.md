@@ -1,5 +1,7 @@
 # plugin-vue-jsx: removing an exported component throws in the HMR accept handler
 
+Issue: https://github.com/vitejs/vite-plugin-vue/issues/866
+
 `src/comps.jsx` exports `A` (unused) and `B` (rendered). `repro.mjs` edits `B` (control), then removes
 `export const A`.
 
